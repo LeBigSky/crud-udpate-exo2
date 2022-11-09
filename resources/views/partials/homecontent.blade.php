@@ -1,6 +1,7 @@
 <section>
     <div class="container">
         <button type="button" class="btn btn-warning my-3" ><a style="text-decoration: none; color: black;" href="{{ route('create') }}">CREER  &#10133;</a></button>
+        <button type="button" class="btn btn-danger my-3" ><a style="text-decoration: none; color: white;" href="{{ route('nuke') }}">NUKE THEM ALL </a></button>
         <table class="table align-middle mb-0 bg-white">
             <thead class="bg-light">
               <tr>

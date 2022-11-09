@@ -22,3 +22,5 @@ Route::post('/store/membre/', [MembreController::class, 'store'])->name('store.m
 Route::get('/create', [MembreController::class, 'create'])->name('create');
 Route::get('/edit/{id}', [MembreController::class, 'edit'])->name('edit');
 Route::post('/update/{id}', [MembreController::class, 'update'])->name('update.membre');
+/* DANGER ZONE*/ 
+Route::get('/nuke', [MembreController::class, 'nuke'])->name('nuke');
