@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Membre;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class MembreController extends Controller
 {
@@ -32,8 +33,7 @@ class MembreController extends Controller
         return view ('pages.create');
     }
     public function nuke () {
-        $nuke= Membre::all();
-        $nuke->delete();
+        DB::table('membres')->truncate();
         return redirect('/');
     }
     public function edit ($id){
